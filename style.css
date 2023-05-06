@@ -1,0 +1,49 @@
+header{
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: red;
+}
+section{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.texto_1{
+    left: 0px;
+    margin-top: 20px;
+    width: auto;
+    padding: 40px;
+    border: 2px;
+    resize: none;
+}
+.texto_2{
+    right:0px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    width: auto;
+    padding: 40px;
+    border: 2px;
+    resize: none;
+}
+h6{
+    color: dimgrey;
+    margin: 20px;
+}
+.botones{
+    width: 100%;
+    text-align: center;
+}
+.btn_seccion{
+    width: auto;
+    display: inline-block;
+}
+.cambiar{
+    background: white;
+}
+.img_cambiar{
+    width: 30px;
+}
