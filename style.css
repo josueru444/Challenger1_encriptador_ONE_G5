@@ -97,3 +97,24 @@ button:hover{
     text-align: center;
     border-radius: 20px;
 }
+@media  screen and (max-width:480px) {
+    header{
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .seccion_encriptar,.seccion_desencriptar{
+        width: 90%;
+        margin-bottom: 40px ;
+    }
+    .texto_1,.texto_2{
+        height: 200px;
+    }
+}
