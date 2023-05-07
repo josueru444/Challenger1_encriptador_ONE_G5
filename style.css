@@ -100,7 +100,7 @@ button:hover{
 @media  screen and (max-width:480px) {
     header{
         text-align: center;
-        height: auto;
+        margin-bottom: 50px;
         width: 100%;
     }
     .h1{
@@ -110,9 +110,10 @@ button:hover{
     .logo{
         width: 40px;
         height: 40px;
+        margin: 20px;
     }
     .titulo{
-        font-size: 10px;
+        font-size: 1.7em;
     }
     .seccion_encriptar,.seccion_desencriptar{
         width: 90%;
