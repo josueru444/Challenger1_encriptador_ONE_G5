@@ -2,23 +2,36 @@ body{
     background: #fdfdf5;
 }
 header{
-    color: ;
+    
+    text-align: center;
+}
+main div{
+    height: auto;
+    padding: 13px;
+    align-items: center;
     text-align: center;
 }
 .seccion_encriptar{
-    position: relative;
+    display: inline-block;
     background: #e6ede3;
-    width: 40%;
+    width: 50%;
+    height: 500px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px 0;
     border-radius: 20px;
+    
 }
 .seccion_desencriptar{
+    display: inline-block;
+    height: 500px;
     background: #e6ede3;
+    margin: 0;
+    padding: 20px;
     
     width: 40%;
+    border-radius: 20px;
 }
-.texto_1{
+.texto_1,.texto_2{
     background:#e6ede3 ;
     width: 99%;
     border-width: 2px;
@@ -26,9 +39,7 @@ header{
     border-radius: 10px;
     border-color: #002400;
 }
-.texto_1:active{
-    
-}
+
 
 h6{
     color: dimgrey;
