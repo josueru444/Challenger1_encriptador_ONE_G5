@@ -1,34 +1,35 @@
-header{
-    width: 100%;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    background: red;
+body{
+    background: #fdfdf5;
 }
-section{
-    width: 50%;
-    display: inline-block;
+header{
+    color: ;
     text-align: center;
+}
+.seccion_encriptar{
+    position: relative;
+    background: #e6ede3;
+    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.seccion_desencriptar{
+    background: #e6ede3;
+    
+    width: 40%;
 }
 .texto_1{
-    left: 0px;
-    margin-top: 20px;
-    width: auto;
-    padding: 40px;
-    border: 2px;
+    background:#e6ede3 ;
+    width: 99%;
+    border-width: 2px;
     resize: none;
+    border-radius: 10px;
+    border-color: #002400;
 }
-.texto_2{
-    right:0px;
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-    width: auto;
-    padding: 40px;
-    border: 2px;
-    resize: none;
+.texto_1:active{
+    
 }
+
 h6{
     color: dimgrey;
     margin: 20px;
@@ -36,6 +37,7 @@ h6{
 .botones{
     width: 100%;
     text-align: center;
+    margin: 20px 0;
 }
 .btn_seccion{
     width: auto;

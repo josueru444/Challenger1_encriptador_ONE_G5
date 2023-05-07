@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
 <body>
     <header>
-        <h1>Encriptador de texto Alura</h1>
+        <h1>Encriptador de texto</h1>
     </header>
     <main>
-        <section>
-            <textarea class="texto_1" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <h6>Ingresa solamente letras minúsculas</h6>
-            <div class="botones">
-                <button class="btn_encriptar">Encriptar texto</button>
-                <button class="btn_desencriptar">Desencriptar texto</button>
+        <section class="seccion_encriptar">
+            <div>
+                <textarea class="texto_1" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <h6>ⓘ Ingresa solamente letras minúsculas</h6>
+                <div class="botones">
+                    <button class="btn_encriptar">Encriptar texto</button>
+                    <button class="btn_desencriptar">Desencriptar texto</button>
+                </div>
             </div>
         </section>
         
-        <section>
+        <section class="seccion_desencriptar">
             <textarea class="texto_2" cols="30" rows="10" placeholder="Texto encriptado:" disabled></textarea>
             <button class="btn_copiar">Copiar texto</button>
         </section>
