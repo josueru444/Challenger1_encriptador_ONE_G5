@@ -1,50 +1,99 @@
-header{
-    width: 100%;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    background: red;
+body{
+    background: #fdfdf5;
+    font-family: 'Roboto', sans-serif;
 }
-section{
-    width: 50%;
+header{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #002400;
+    margin: 20px 0;
+}
+img{
+    width: 45px;
+    height: 45px;
+    margin-left: 40px;
+}
+h1{
+    font-size: 2em;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+.seccion_encriptar{
+    background: #e7edde;
+    width: 45%;
+    height: auto;
     display: inline-block;
+    margin: 0 40px;
+    align-items: center;
     text-align: center;
+    border-radius: 20px;
+}
+.contenedor_text1,.contenedor_text2{
+    color: #002400;
+    padding: 10px;
 }
 .texto_1{
-    left: 0px;
-    margin-top: 20px;
-    width: auto;
-    padding: 40px;
-    border: 2px;
+    font-family: monospace;
+    font-size: 1.9em;
+    font-style: italic;
+    width: 97%;
+    height: 400px;
+    background: #e7edde;
+    outline: none;
+    padding: 10px;
+    border: none;
     resize: none;
 }
 .texto_2{
-    right:0px;
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-    width: auto;
-    padding: 40px;
-    border: 2px;
+    font-family: monospace;
+    
+    font-size: 1.9em;
+    font-style: italic;
+    width: 97%;
+    height: 400px;
+    background: #e7edde;
+    outline: none;
+    padding: 10px;
+    border: none;
     resize: none;
+    display: block;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typin{
+    from{width: 0;}
+}
+@keyframes blink{
+    50%{border-color: transparent;}
 }
 h6{
-    color: dimgrey;
-    margin: 20px;
+    color: #002400;
+    margin: 1em;
+    font-size: 1.5em;
 }
-.botones{
-    width: 100%;
-    text-align: center;
+button{
+    border-radius: 10px;
+    height: 50px;
+    margin: 0 10px 2em;
+    border-color:transparent;
+    background: #b7f397;
+    width: 40%;
+    transition: all 1s;
 }
-.btn_seccion{
-    width: auto;
-    display: inline-block;
-}
-.cambiar{
-    background: white;
-}
-.img_cambiar{
-    width: 30px;
+button:hover{
+    transform: scale(1.1);
     
+}
+
+.seccion_desencriptar{
+    background: #e7edde;
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin: 0 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
 }
