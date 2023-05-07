@@ -1,62 +1,99 @@
 body{
     background: #fdfdf5;
+    font-family: 'Roboto', sans-serif;
 }
 header{
-    
-    text-align: center;
-}
-main div{
-    height: auto;
-    padding: 13px;
-    align-items: center;
-    text-align: center;
-}
-.seccion_encriptar{
-    display: inline-block;
-    background: #e6ede3;
-    width: 50%;
-    height: 500px;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 20px;
-    
-}
-.seccion_desencriptar{
-    display: inline-block;
-    height: 500px;
-    background: #e6ede3;
-    margin: 0;
-    padding: 20px;
-    
-    width: 40%;
-    border-radius: 20px;
-}
-.texto_1,.texto_2{
-    background:#e6ede3 ;
-    width: 99%;
-    border-width: 2px;
-    resize: none;
-    border-radius: 10px;
-    border-color: #002400;
-}
-
-
-h6{
-    color: dimgrey;
-    margin: 20px;
-}
-.botones{
+    height: 48px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #002400;
     margin: 20px 0;
 }
-.btn_seccion{
-    width: auto;
+img{
+    width: 45px;
+    height: 45px;
+    margin-left: 40px;
+}
+h1{
+    font-size: 2em;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+.seccion_encriptar{
+    background: #e7edde;
+    width: 45%;
+    height: auto;
     display: inline-block;
+    margin: 0 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
 }
-.cambiar{
-    background: white;
+.contenedor_text1,.contenedor_text2{
+    color: #002400;
+    padding: 10px;
 }
-.img_cambiar{
-    width: 30px;
+.texto_1{
+    font-family: monospace;
+    font-size: 1.9em;
+    font-style: italic;
+    width: 97%;
+    height: 400px;
+    background: #e7edde;
+    outline: none;
+    padding: 10px;
+    border: none;
+    resize: none;
+}
+.texto_2{
+    font-family: monospace;
+    
+    font-size: 1.9em;
+    font-style: italic;
+    width: 97%;
+    height: 400px;
+    background: #e7edde;
+    outline: none;
+    padding: 10px;
+    border: none;
+    resize: none;
+    display: block;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typin{
+    from{width: 0;}
+}
+@keyframes blink{
+    50%{border-color: transparent;}
+}
+h6{
+    color: #002400;
+    margin: 1em;
+    font-size: 1.5em;
+}
+button{
+    border-radius: 10px;
+    height: 50px;
+    margin: 0 10px 2em;
+    border-color:transparent;
+    background: #b7f397;
+    width: 40%;
+    transition: all 1s;
+}
+button:hover{
+    transform: scale(1.1);
+    
+}
+
+.seccion_desencriptar{
+    background: #e7edde;
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin: 0 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
 }

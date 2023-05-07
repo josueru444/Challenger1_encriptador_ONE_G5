@@ -2,33 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
     <header>
+        <img src="imagenes/image.png" alt="Logo Alura">
         <h1>Encriptador de texto</h1>
     </header>
     <main>
-        <div>
-        <section class="seccion_encriptar">
-            <div>
-                <textarea class="texto_1" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-                <h6>ⓘ Ingresa solamente letras minúsculas</h6>
-                <div class="botones">
-                    <button class="btn_encriptar">Encriptar texto</button>
-                    <button class="btn_desencriptar">Desencriptar texto</button>
-                </div>
-            </div>
-        </section>
         
-        <section class="seccion_desencriptar">
-            <textarea class="texto_2" cols="30" rows="10" placeholder="Texto encriptado:" disabled></textarea>
-            <button class="btn_copiar">Copiar texto</button>
-        </section>
-    </div>
+        <div class="seccion_encriptar">
+                <div class="contenedor_text1">
+                    <textarea class="texto_1" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <h6>ⓘ Ingresa solamente letras minúsculas</h6>
+                
+                <button class="btn_encriptar" onclick="btnEncriptar()" >Encriptar texto</button>
+                <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar texto</button>
+        </div>
+
+        <div class="seccion_desencriptar">
+            <div class="contenedor_text2">
+                <textarea class="texto_2" cols="30" rows="10" placeholder="Texto encriptado:" disabled></textarea>
+            </div>
+            <h6>Texto encriptado</h6>
+            <button class="btn_copiar" onclick="copiarTexto()">Copiar texto</button>
+        </div>
+    
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
