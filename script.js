@@ -61,7 +61,7 @@ function desencriptar(){
 
 function comprobarEspeciales(entrada){
     entrada.toLowerCase();
-    patron=/[^a-zA-Z0-9]/;
+    patron=/[^a-zA-Z0-9 ]/;
     if (patron.test(entrada)){
         return true;
     }else{

@@ -103,6 +103,10 @@ button:hover{
         height: auto;
         width: 100%;
     }
+    .h1{
+        font-weight: bold;
+        font-size: 100px;
+    }
     .logo{
         width: 40px;
         height: 40px;
