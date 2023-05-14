@@ -9,8 +9,13 @@ const mensaje=document.querySelector('.texto_2');
 
 function btnEncriptar(){
     const encriptado=encriptar(textEncriptar.value);
-    textEncriptar.value='';
-    mensaje.value=encriptado;
+    if(encriptado!=''){
+        textEncriptar.value='';
+        mensaje.value=encriptado;
+    }else{
+        alert('Ingresa texto para encriptar')
+    }
+    
     
 }
 
