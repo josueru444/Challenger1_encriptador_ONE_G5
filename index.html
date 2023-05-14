@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Encriptador</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 class="logo"><img src="imagenes/image.png" alt="Logo Alura"></h1>
-        <h1 class="titulo">Encriptador de texto</h1>
+      <img class="logo" src="imagenes/image.png" alt="Logo Alura" />
     </header>
     <main>
+      <div class="seccion_encriptar">
+        <h1 class="titulo">Encriptador de texto</h1>
         
-        <div class="seccion_encriptar">
-                <div class="contenedor_text1">
-                    <textarea class="texto_1" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-                </div>
-                <h6>ⓘ Ingresa solamente letras minúsculas</h6>
-                
-                <button class="btn_encriptar" onclick="btnEncriptar()" >Encriptar texto</button>
-                <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar texto</button>
+        <textarea
+          class="texto_1"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <h4>ⓘ Ingresa solamente letras minúsculas</h4>
+        <div class="botones">
+        <button class="btn_encriptar" onclick="btnEncriptar()">
+          Encriptar texto
+        </button>
+        <button class="btn_desencriptar" onclick="btnDesencriptar()">
+          Desencriptar texto
+        </button>
+        <button onclick="limpiar()">Limpiar</button>
         </div>
 
-        <div class="seccion_desencriptar">
-            <div class="contenedor_text2">
-                <textarea class="texto_2" cols="30" rows="10" placeholder="Texto encriptado:" disabled></textarea>
-            </div>
-            <h6>Texto encriptado</h6>
-            <button class="btn_copiar" onclick="copiarTexto()">Copiar texto</button>
-        </div>
-    
+        <textarea
+          class="texto_2"
+          cols="30"
+          rows="10"
+          placeholder="Texto encriptado:"
+          disabled>
+        </textarea>
+        <br>
+        <button class="btn_copiar" onclick="copiarTexto()">Copiar texto</button>
+
+      </div>
     </main>
+    <div class="star">
+      <p></p>
+    </div>
+    <footer>
+      <p>© Copyright Josue Salomon Ruiz Ramirez 2023.</p>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/josu%C3%A9-salom%C3%B3n-ru%C3%ADz-ram%C3%ADrez-b01945196"
+          ><img src="imagenes/linkedin.png" alt="linkedin"
+        /></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"
+          ><img src="imagenes/correo-electronico.png" alt="Correo electronico"
+        /></a>
+        <a href="https://github.com/josueru444"
+          ><img src="imagenes/github.png" alt=""
+        /></a>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

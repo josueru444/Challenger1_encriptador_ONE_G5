@@ -8,16 +8,10 @@ const mensaje=document.querySelector('.texto_2');
 //La letra "u" es convertida para "ufat"
 
 function btnEncriptar(){
-    const especial=comprobarEspeciales(textEncriptar.value);
-    console.log(especial);
-
-    if (especial){
-        alert('El texto contiene carácteres especiales')
-    }else{
-        const encriptado=encriptar(textEncriptar.value);
-        textEncriptar.value='';
-        mensaje.value=encriptado;
-    }
+    const encriptado=encriptar(textEncriptar.value);
+    textEncriptar.value='';
+    mensaje.value=encriptado;
+    
 }
 
 function btnDesencriptar(){
@@ -59,12 +53,14 @@ function desencriptar(){
     return desencriptada
 }
 
-function comprobarEspeciales(entrada){
-    entrada.toLowerCase();
-    patron=/[^a-zA-Z0-9 ]/;
-    if (patron.test(entrada)){
-        return true;
-    }else{
-        return false;
-    }
+textEncriptar.addEventListener('input', function () {
+    let text_input = textEncriptar.value;
+    // Convertir a minúsculas y quitar caracteres no permitidos
+    text_input = text_input.toLowerCase().replace(/[^a-z\s]/g, '');
+    textEncriptar.value = text_input;
+});
+
+function limpiar(){
+    textEncriptar.value='';
+    mensaje.value='';
 }
